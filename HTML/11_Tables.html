@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11th File - Tables</title>
+</head>
+<style>
+    td {
+        border: 1px solid black;
+        text-align: center;
+    }
+    th {
+        border: 1px dotted brown;
+        color: burlywood;
+    }
+</style>
+<body>
+    <h1>Tables - elements that arranges data into cells</h1>
+    <p>&lt;table&gt; - main part where cells are</p>
+    <p>&lt;tr&gt; - table row</p>
+    <p>&lt;th&gt; - table header</p>
+    <p>&lt;td&gt; - table data</p>
+    <h2>Regular</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Occupancy</th>
+        </tr>
+        <tr>
+            <td>Andrew</td>
+            <td>ID-09123</td>
+            <td>Mechanic</td>
+        </tr>
+        <tr>
+            <td>Artiom</td>
+            <td>ID-09124</td>
+            <td>Idiot</td>
+        </tr>
+        <tr>
+            <td>Trapa</td>
+            <td>ID-06171</td>
+            <td>2nd mate</td>
+        </tr>
+    </table>
+    <h2>Colspan - a cell span more than one column</h2>
+    <table>
+        <tr>
+            <th>Device</th>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>Mouse</td>
+            <td>X</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Monitor</td>
+            <td>-</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>USB</td>
+            <td colspan="2">X</td>
+        </tr>
+    </table>
+    <h2>Rowspan - a cell span more than one column</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>Andrew</td>
+            <td>Artiom</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style="vertical-align: middle;">Skills</th>
+            <td>Math</td>
+            <td>Computing</td>
+        </tr>
+        <tr>
+            <td>Engineering</td>
+            <td>Data gathering</td>
+        </tr>
+    </table>
+</body>
+</html>
