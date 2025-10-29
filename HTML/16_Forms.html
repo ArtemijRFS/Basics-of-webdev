@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>16th File - Forms</title>
+</head>
+<body>
+    <h1>Forms - elements that collect user inputs</h1>
+    <p>&lt;form&gt; - creates an HTML form for user input</p>
+    <p>&lt;label&gt; - defines a label for many form elements</p>
+    <p>&lt;input&gt; - input element of form. There are <strong>5 main input types</strong></p>
+    <form method="get">
+        <hr />
+        <p><strong>Checkbox</strong> - for selecting zero or more of many choices</p>
+        <h5>Select Yeat song</h5>
+        <input type="checkbox" name="yeat-watuwant2" id="yeat-watuwant2" />
+        <label for="yeat-watuwant2">Wat u want 2</label>
+        <input type="checkbox" name="yeat-psychoceo" id="yeat-psychoceo" />
+        <label for="yeat-psychoceo">Psycho CEO</label>
+        <input type="checkbox" name="yeat-champion" id="yeat-champion" />
+        <label for="yeat-champion">Champion</label>
+        <input type="checkbox" name="yeat-die" id="yeat-die" />
+        <label for="yeat-die">DIE</label>
+        <hr />
+        <p><strong>Text</strong> - single-line for text input</p>
+        <h5>Type your favourite Yeat song</h5>
+        <label for="song">Song name</label>
+        <input type="text" name="song" id="song" />
+        <hr />
+        <p><strong>Radio</strong> - for selecting one of many</p>
+        <h5>Your favourite singer</h5>
+        <input type="radio" name="drake" id="drake" value="drake" />
+        <label for="drake">Drake</label>
+        <input type="radio" name="21savage" id="21savage" value="24savage" />
+        <label for="21savage">21 Savage</label>
+        <input type="radio" name="tyga" id="tyga" value="tyga" />
+        <label for="tyga">TYGA</label>
+        <input type="radio" name="posty" id="posty" value="posty" />
+        <label for="posty">Post Malone</label>
+        <hr />
+        <p><strong>Select</strong> - a drop-down list</p>
+        <label for="games">Select a game:</label>
+        <select name="games" id="games" size="2">
+            <option value="destiny">Destiny 2</option>
+            <option value="wow" selected>World of Warcraft</option>
+            <option value="cs2">CS2</option>
+            <option value="grimdawn">Grim Dawn</option>
+        </select>
+        <hr />       
+        <p><strong>Textarea</strong> - multi-line input field</p>
+        <textarea name="comments" id="comments" cols="20" rows="10">
+Here you can type any comment you want
+        </textarea>
+        <hr />        
+        <p><strong>Button</strong> - for a clickable button</p>
+        <input type="button" value="Hello!" />
+        <input type="button" value="Over here!" />
+        <hr />
+        <p><strong>Submit</strong> - for submiting a form</p>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
