@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6th File - Margins</title>
+</head>
+<style>
+    p {
+        border: 1px solid burlywood;
+    }
+    .margins {
+        margin: 100px 100px 20px 20px;
+    }
+    .bot {
+        margin-bottom: 30px;
+    }
+    .top {
+        margin-top: 30px;
+    }
+    .bot, .top {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+</style>
+<body>
+    <h1>For space around elements, outside on any defined borders</h1>
+    <div class="normal">
+        <p>This is a regular paragraph</p>
+        <p>As well as this one</p>
+    </div>
+    <div class="marg">
+        <p>This is a regular paragraph</p>
+        <p class="margins">I&apos;m with margins</p>
+    </div>
+    <p><Strong>Margins do not added together</Strong>, value of biggest is used (margin collapse)</p>
+    <div>
+        <p class="bot">Hi, i have bottom margin of 30px</p>
+        <p class="top">Hi, i have top margin of 30px</p>
+    </div>
+</body>
+</html>
