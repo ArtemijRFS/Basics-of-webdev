@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8th File - Box-sizing property</title>
+</head>
+<style>
+    .cont {
+        box-sizing: content-box;
+        width: 200px;
+        padding: 10px;
+        background-color: bisque;
+        margin: auto;
+    }
+    .cont-p {
+        border-style: groove;
+        border-color: black;
+        border-radius: 15px;
+        padding: 10px;
+        text-align: center;
+    }
+    .box {
+        box-sizing: border-box;
+        width: 200px;
+        padding: 10px;
+        background-color: mediumturquoise;
+        margin: auto;
+    }
+    .box-p {
+        border-style: groove;
+        border-color: azure;
+        border-radius: 15px;
+        padding: 10px;
+        color: azure;
+        text-align: center;
+        margin: auto;
+    }
+</style>
+<body>
+    <h1>Defines how the width and height of an element are calculated: should they include padding and borders, or not</h1>
+    <p><strong>Border-box</strong> - width and height properties includes content, padding and border</p>
+    <p><strong>Content-box</strong> - default, the width and height properties includes only the content (border and padding are not included)</p>
+    <div class="cont">
+        <p class="cont-p">Hello, I&apos;m content-box</p>
+        <p class="cont-p">This is a new paragraph</p>
+        <p class="cont-p">I still can&apos;t get the idea</p>
+        <p class="cont-p">Is it working?</p>
+    </div>
+    <div class="box">
+        <p class="box-p">Hello, I&apos;m border-box</p>
+        <p class="box-p">This is a new paragraph</p>
+        <p class="box-p">I still can&apos;t get the idea</p>
+        <p class="box-p">Is it working?</p>
+    </div>
+</body>
+</html>
